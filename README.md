@@ -1,4 +1,4 @@
-## Restaurant
+### 🍔 Restaurant
 
 This repository will be in charge of consuming the API developed in Django related to restaurants. Its purpose is to learn more about this Python-based technology. The link to the API repository:
 
@@ -9,7 +9,7 @@ This repository will be in charge of consuming the API developed in Django relat
 npm install
 ```
 
-### 👨‍💻 Compiles and hot-reloads for development
+## 👨‍💻 Compiles and hot-reloads for development
 ```
 npm run serve
 ```
