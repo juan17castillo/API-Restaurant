@@ -1,14 +1,20 @@
 <template>
   <li>
     <base-card>
-    <img :src=iconUrl alt="" class="logo">
-    <br>
-    <h2>{{id}}</h2>
-    <h1>{{name}}</h1>
-    <p>{{phone}}</p>
-    <i class="fas fa-phone"></i>
-    <p>{{email}}</p>
-    <p>{{website}}</p>
+      <div class="container">
+        <img :src="iconUrl" alt="restaurant" />
+      </div>
+      <div class="details">
+        <div class="title">
+          <h3 class="name">{{ name }}</h3>
+          <h4 class="id">ID: {{ id }}</h4>
+        </div>
+        <div class="details-card">
+          <p><i class="fas fa-envelope"></i> {{ email }}</p>
+          <p><i class="fas fa-globe-asia"></i> {{ website }}</p>
+          <p><i class="fas fa-phone"></i> {{ phone }}</p>
+        </div>
+      </div>
     </base-card>
   </li>
 </template>
@@ -18,36 +24,65 @@ export default {
 };
 </script>
 <style scoped>
-li {
-  margin: 1rem 0;
-  border-radius: 12px;
-  padding: 1rem;
-  list-style-type: none;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+img {
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
 }
-h3 {
-  font-size: 1.5rem;
+.container:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.7;
 }
-h3,
-h4 {
-  margin: 0.5rem 0;
+.details > h3 {
+  color: #3d008d;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 16px 0px 13px 10px;
 }
-div {
-  margin: 0.5rem 0;
-}
-.actions {
-  display: flex;
-  justify-content: flex-end;
+p {
+  color: #a0a0a0;
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.logo {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 120px;
-    width: 120px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    box-sizing: border-box;
+.details-card {
+  padding-top: 55px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+li {
+  list-style-type: none;
+}
+.name {
+  font-family: "Ubuntu", sans-serif;
+  color: #3d008d;
+  float: left;
+  padding-left: 10px;
+  font-size: 23px;
+  position: absolute;
+}
+.id {
+  font-family: "Ubuntu", sans-serif;
+  float: right;
+  padding-right: 10px;
+  color: #a0a0a0;
+}
+
+.fas {
+  color: #3d008d;
 }
 </style>

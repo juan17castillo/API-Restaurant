@@ -12,5 +12,5 @@ app.use(router);
 app.component('base-card', BaseCard);
 app.component('base-header', BaseHeader);
 
-app.mount('#app')
+app.mount('#app');
 

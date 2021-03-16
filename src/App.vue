@@ -28,7 +28,7 @@ body {
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   grid-auto-rows: minmax(150px, auto);
-  margin: 20px 10px 10px 0px;
+  /* margin: 20px 10px 10px 0px; */
 }
 .wrapper > * {
   padding: 15px;

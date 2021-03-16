@@ -1,18 +1,24 @@
 <template>
   <header>
     <nav>
-      
-      <h1><img src="https://oportunidades.icesi.edu.co/images/espanol/logo.png" alt="" class="logo"><router-link to="/">Restaurants</router-link></h1>
+      <h1>
+        <img
+          src="https://oportunidades.icesi.edu.co/images/espanol/logo.png"
+          alt=""
+          class="logo"
+        /><router-link to="/">Restaurants</router-link>
+      </h1>
       <ul>
-        <li><router-link to="/create-restaurant">Create Restaurant</router-link></li>
+        <li>
+          <router-link to="/create-restaurant">Create Restaurant</router-link>
+        </li>
       </ul>
     </nav>
   </header>
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
 <style scoped>
@@ -68,10 +74,9 @@ li {
   margin: 0 0.5rem;
 }
 
-.logo{
+.logo {
   width: 50px;
   height: 50px;
   position: relative;
 }
-
 </style>
