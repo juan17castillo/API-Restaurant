@@ -1,4 +1,4 @@
-### 🍔 Restaurant
+# 🍔 Restaurant
 
 This repository will be in charge of consuming the API developed in Django related to restaurants. Its purpose is to learn more about this Python-based technology. The link to the API repository:
 
